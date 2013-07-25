@@ -1,4 +1,8 @@
 Rs::Application.routes.draw do
+  get "properties/index"
+
+  get "properties/show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
