@@ -20,7 +20,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.3.0'
 gem 'geocoder'
 gem 'json'
 gem 'gmaps4rails'
@@ -29,6 +29,7 @@ gem 'bootstrap-sass'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate'
 gem 'paper_trail'
+gem "meta_search",    '>= 1.1.0.pre'
 
 
 # To use ActiveModel has_secure_password
