@@ -1,6 +1,6 @@
 class PropertiesController < ApplicationController
   def index
-  	@json = Property.all.to_gmaps4rails
+  	@json = Property.search(params).to_gmaps4rails
   end
 
   def show

@@ -12,4 +12,13 @@ class Property < ActiveRecord::Base
       # add here whatever html content you desire, it will be displayed when users clicks on the marker
       "#{self.address}"
    end
+
+   def self.search(query)
+	   	if (query[:search].present?)
+	        where('address LIKE ?', "%#{query[:search]}%")
+	    else
+	    	all    
+	    end    
+   end
+
 end

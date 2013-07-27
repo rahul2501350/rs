@@ -6,6 +6,9 @@ Rs::Application.routes.draw do
 
   get "properties/show"
 
+  resources :properties
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
