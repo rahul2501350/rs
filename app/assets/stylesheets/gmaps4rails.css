@@ -1,4 +1,4 @@
-.map_container {
+/*.map_container {
   padding: 6px;
   border-width: 1px;
   border-style: solid;
@@ -12,6 +12,30 @@
 .gmaps4rails_map {
   width: 800px;
   height: 400px;
+}
+
+.bing_map {
+   position: absolute;
+   top: 20;
+   left: 10;
+   width: 400px;
+   height: 400px;
+   border:#555555 2px solid;
+}*/
+
+.map_container {
+  display: block;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-top: 1px solid #dddddd;
+}
+
+.gmaps4rails_map {
+  display:block;
+  width: 100%;
 }
 
 .bing_map {

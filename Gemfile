@@ -21,6 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails', '~> 2.3.0'
+gem 'jquery-cookie-rails'
 gem 'geocoder'
 gem 'json'
 gem 'gmaps4rails'

@@ -1,0 +1,19 @@
+<div id="filter-box" data-spy="affix" data-offset-top="0">
+	<h4 id="filter-find"><i class="icon-search"></i> Filter and find</h4>
+	<%= form_tag('/properties', method: "get", class: "form-search") do %>
+
+		<div id="keywords">
+			<h5 class="filter-headline">Address</h5>
+			<%= text_field_tag(:search, params[:search], class:"filter", id:"keywords-fields", placeholder: "e.g. delhi") %>
+		</div>
+
+
+		<div id="search-button">
+			<%= submit_tag "Search", class: "btn btn-primary", name: nil, id: "btn_submit_search" %>
+		</div>
+	<% end %>
+	
+	<%= render 'layouts/footer' %>	
+
+
+</div>

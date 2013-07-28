@@ -1,0 +1,41 @@
+<div id="headertext">
+	<span class="left"><h4>Search Results | <%= @properties.count %> properties </pre></h4></span>
+	<div class="btn-group pull-right" id="view-switch" data-toggle="buttons-radio">
+	  <button type="button" class="btn" id="list-btn" data-toggle="button" onClick="set_list()"><i class="icon icon-list"></i></button>
+	  <button type="button" class="btn" id="map-btn" data-toggle="button" onClick="set_map()"><i class="icon icon-map-marker"></i></button>
+	</div>
+</div>
+	<% if @ki == 'b' %>
+		<div id="properties-table">
+			<% if @properties.length != 0 %>
+				<table class="table table-condensed">
+					<thead>
+						<%= render 'layouts/table_header' %>
+					</thead>
+					<% @properties.each do |property| %>
+					<tr class="property-row" onclick="document.location = '<%= url_for(property)%>'">
+						<td> <%= property.address.titleize %> </td>
+						<td> <%= property.bedrooms %> </td>
+					</tr>					
+					<% end %>
+				</table>
+				<%= @ki %>
+			<% else %>
+				<div class="center medium">
+						<b>Sorry, there are no results =( </b>
+				</div>	
+			<% end %>	
+		</div>
+	<% else %>
+		<% if @properties.length != 0 %>
+			<%= gmaps4rails(@json) %>
+			
+			<%= @ki %>
+
+		<% else %>
+			<div class="center medium">
+				<b>Sorry, there are no results =( </b> 		
+			</div>
+		<% end %>		
+	<% end %>	
+

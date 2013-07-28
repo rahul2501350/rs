@@ -1,0 +1,478 @@
+@import "bootstrap";
+
+// GENERAL
+.inline-list {
+  margin-left: 0;
+  display:inline;
+  list-style-type: none;
+  height:auto;
+        
+  .inline-list-item {
+    display:inline-block;
+  }
+
+  .social-network-image {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.subtle {
+  font-size: 0.7em;
+  font-weight: normal;
+  color: #3D3D3D;
+
+  .tip {
+    color: #3D3D3D;
+  }
+}
+
+//////////////
+
+
+// FRONT PAGE
+
+#hero-picture {
+  margin-top: 20px;
+
+  width: 900px;
+  height:400px;
+}
+
+
+
+html {
+  position: relative;
+  min-height:100%;
+}
+
+body {
+	margin-top: 30px;
+  min-height:100%;
+  padding:0;
+  margin:0;
+}
+
+.navbar-inner {
+  height: 50px;
+  padding: 0;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+  padding: 0;
+}
+
+.navbar-fixed-top {
+  margin-bottom: 0;
+}
+
+.pill {
+  margin-top:6px;
+}
+
+#about-page {
+}
+
+.search-box {
+  width: 100%;
+}
+
+.navbar {
+
+
+  #logo {
+    margin-left: 20px;
+    padding-right: 28px;
+    padding-top: 5px;
+    float: left;
+    margin-right: 10px;
+    font-size: 2.2em;
+    color: #333333;
+    font-weight: normal;
+    line-height: 1;
+    &:hover {
+      color: #808080;
+      text-decoration: none
+    }
+    #letter-q {
+      font-size: 1.3em;
+    }
+  }
+
+
+}
+
+.span3 {
+  margin:0;
+  border:0;
+  padding:0;
+}
+
+.beta-text {
+  //vertical-align: super;
+  
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: #969696;   
+}
+
+.container {
+  //width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.results-table {
+  padding-bottom: 70px;
+}
+
+// Fonts
+.medium {
+  font-size: 1.5em;
+}
+
+
+// 
+
+.span3 {
+  position: fixed;
+  float: left;
+  margin-top: 15px;
+  margin-left: 0px;
+}
+
+tr.property-row {
+  &:hover {
+    cursor: pointer;
+    background-color:#DAE6FF;
+    text-decoration: none
+  }
+}
+
+/*div.results-table {
+  margin-left:15px;
+  margin-right:20px;
+}*/
+
+#results-table {
+  margin-top: 40px;
+}
+
+table {
+  width: 100%;
+}
+
+/*div.options {
+  float:left;
+  margin-left: 20px;
+}*/
+
+div.totals {
+  float: right;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+.left {
+  float: left;
+  text-align:left;
+  margin-left: 10px;
+}
+
+.right {
+  float:right;
+  text-align:right;
+}
+
+span.available {
+  color: #33CC66;
+}
+
+span.unavailable {
+  color: #CC3333;
+}
+
+#view-switch {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.gmaps4rails_map {
+  width: 1000px;
+  height: 100%;
+}
+
+#map label { width: auto; display:inline; }
+#map img { max-width: none; }
+#streetViewContainer label { width: auto; display:inline; }
+#streetViewContainer img { max-width: none; }
+
+
+
+
+// Footer
+.footer {
+  //border-top: 1px solid #ccc;
+  background-color: #f5f5f5;
+  position: absolute;
+  height: 100px;
+  bottom:0;
+  width:190px;
+
+  .copyright {
+    list-style-type: none;
+    font-weight: normal;
+    color: #7D7D7D ;
+  }
+
+  .footer-links {
+    a{
+      text-decoration: none;  
+      color: #5C5C5C;
+    }
+    display: inline;
+    color: #5C5C5C;
+    margin-right:0;
+  }
+}
+
+#centered-footer {
+  //border-top: 1px solid #ccc;
+  
+  height: 60px;
+  position: relative;
+  display: block;
+  left:0;
+  right:0;
+  bottom:0;
+
+  #footer-container {
+    margin-top: 10px;
+  }
+
+  .copyright { 
+    margin-left: 20px;
+    list-style-type: none;
+    font-weight: normal;
+    color: #7D7D7D ;
+  }
+
+  .footer-links {
+    margin-left: 20px;
+    a{
+      text-decoration: none;  
+      color: #5C5C5C;
+    }
+    display: inline;
+    color: #5C5C5C;
+    margin-right:0;
+  }
+
+}
+
+// For smaller resolutions, fix the width of the table
+@media(max-width: 1000px) {
+  #properties-table {
+    width: 750px;
+    max-width: 780px;
+  }
+}
+
+
+// PROPERTY PAGE
+#centered-page {
+  left:0;
+  right:0;
+  display:block;
+  padding-bottom: 10px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+#centered-page-content {
+  padding-top: 51px;
+}
+
+#content {
+  margin-top:10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+#mapContainer {
+  #property-price-box{
+      // border: 1px solid #;
+      // background-color: 
+      border-radius: 8px;
+      height: 50px;
+      width: 75px;
+      position: absolute;
+      right:0;
+      margin-right:10x;
+      margin-top: 10px;
+      overflow: hidden;
+      z-index: 10;
+      
+  }
+  
+  #streetViewContainer {  
+    height: 300px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+  
+#property-address {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+.nav-tabs-property {
+  margin-bottom:0;
+  padding:0;
+  margin-bottom:1px;
+}
+.row-fluid {
+  #property-info {
+    #property-banner {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #dddddd;
+      #property-title {
+        font-size: 2em;
+        margin:0;
+      }
+      #property-city {
+        font-size: 1.2em;
+        line-height: 10px;
+      }
+      #property-bedrooms {
+        margin:0;
+        padding:0;
+        font-size: 1.2em;
+        line-height: 10px;
+      }
+    }
+    #property-description {
+      margin-top: 5px;
+    }
+  }
+  #agent-info {
+    height: 300px;
+    #property-price {
+        margin-top: 10px; 
+        margin-left: 60px; 
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 3em;
+        font-weight: bold;
+        color: #333333;
+        .subtle {
+          font-size: 0.5em;
+        }
+    }  
+    #agent-logo-container {
+      margin-top: 10px;
+      border: 1px solid #bbbbbb;
+      width: 220px;
+      height: 85px;
+      background-color: #fff;
+      #agent-logo {
+        margin: 5px;
+        height: 75px;
+        width: 210px;
+        z-index: -10;
+        top:0;
+        bottom:0;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    #reserve-button {
+      margin-top: 20px;
+      width: 222px;
+      
+    }
+    #more-info-btn {
+      width: 222px;
+      margin-top: 5px;
+    }
+    #contact-btn {
+      width: 222px;
+      margin-top: 5px;
+    }
+  }
+}
+    
+.subheading {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #dddddd;
+  
+    #logo-container {
+      position: relative;
+      height: 75px;
+      width: 150px;
+      margin-right: 20px;
+      border: 1px solid #000;
+    }
+}
+
+// Contact form on property page
+#contact-form-body {
+  margin-left: 20px;
+  margin-top: 20px;
+
+  #contact-body {
+    width: 505px;
+  }
+}
+
+.property-info-box{
+  left:0;
+  right:0;
+  text-align: center;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.field_with_errors {
+  display:inline;
+  margin:0;
+  padding:0;
+  .message {
+    color: red;
+    font-size: 12px;
+    margin:0;
+  }
+}
+
+#success-header {
+  
+}
+
+#success-body {
+  margin-bottom: 20px;
+}
+
+.title-header {
+  font-size: 35px;
+  border-bottom: 1px dotted #dddddd;
+  padding-bottom: 6px;
+  margin-bottom: 25px;
+}
