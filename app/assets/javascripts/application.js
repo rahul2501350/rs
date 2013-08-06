@@ -24,6 +24,23 @@ $(document).ready(function() {
     } catch (e) {
 
     }
+
+    $("#prop_search input").keyup(function(){
+        $.get($("#prop_search").attr("action"), $("#prop_search").serialize(), null, "script");
+        return false;
+    }); 
+
+    //hide the empty container
+                    // $(".map_container").hide();
+                     
+                    // $("#ajax").click(function(){
+                    //   $.getJSON('/properties/index', function(json){
+                    //     $(".map_container").show();
+                    //     Gmaps.loadMaps();
+                    //     Gmaps.map.addMarkers(json);
+                    //   }); 
+
+
     
     // Enable tooltips
     $('.tip').tooltip();
